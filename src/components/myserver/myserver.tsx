@@ -1,5 +1,5 @@
 import React from 'react'
-import Channels from './channels'
+import Channels from './leftcol'
 import ChatBox from './chatbox'
 const MyServer: React.FC = () => 
 {

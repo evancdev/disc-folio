@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import { dragHandler } from '../utils/drag'
+import { ChevronDown } from 'lucide-react';
 
-const Channels: React.FC = () => 
+
+const LeftCol: React.FC = () => 
 {
   // Initial width = 250px
   const [width, setWidth] = useState(250)
@@ -23,13 +25,21 @@ const Channels: React.FC = () =>
         onMouseDown={handleMouseDown}
       />
       
-      <div className="flex bg-disc1 w-full h-12 font-bold border-b border-bcolor items-center relative">
-        <p className="absolute left-[14px]"> 
+      {/* Server Name */}
+      <div className="flex w-full h-12 border-b border-bcolor items-center justify-between px-4">
+        <p className="left-3.25 font-bold tracking-wide"> 
           Evan's Portfolio
         </p>
+
+        {/* Chervon Down */}
+        <ChevronDown 
+          className="w-4 h-4 text-white"
+          role="button"
+          aria-label="Open Server Options"
+        />
       </div>
     </div>
   )
 }
 
-export default Channels
+export default LeftCol
