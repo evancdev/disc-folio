@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { dragHandler } from '../utils/drag'
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react'
 
 
 const LeftCol: React.FC = () => 

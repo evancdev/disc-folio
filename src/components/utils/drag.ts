@@ -30,6 +30,7 @@ export function dragHandler
     document.removeEventListener('mouseup', onMouseUp)
   }
 
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('mouseup', onMouseUp);
+  document.body.style.userSelect = "none"
+  document.addEventListener('mousemove', onMouseMove)
+  document.addEventListener('mouseup', onMouseUp)
 }
