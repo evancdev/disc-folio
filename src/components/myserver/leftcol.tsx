@@ -35,8 +35,12 @@ const LeftCol: React.FC = () =>
         <ChevronDown 
           className="w-4 h-4 text-white"
           role="button"
-          aria-label="Open Server Options"
         />
+      </div>
+
+      {/* Channels */}
+      <div>
+        
       </div>
     </div>
   )
