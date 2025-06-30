@@ -1,11 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
-import dotenv from 'dotenv'
-
-dotenv.config()
 
 const supabaseUrl = 'https://keyvzokbnjqbaijygiiy.supabase.co'
-const supabaseKey = process.env.VITE_SUPABASE_KEY
-
+const supabaseKey = import.meta.env.VITE_SUPABASE_KEY
 const supabase = createClient(supabaseUrl, supabaseKey!)
 
 /**
@@ -34,5 +30,3 @@ export async function getChannels(): Promise<string[] | null> {
 
   return channels.map(channel => channel.name)
 }
-
-export default supabase

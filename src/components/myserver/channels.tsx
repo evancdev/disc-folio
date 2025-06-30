@@ -1,11 +1,22 @@
-import React from 'react'
-import supabase, {getChannels} from '../data/supabase'
+import React, {useEffect, useState} from 'react'
+import {getChannels} from '../data/supabase'
 
 const Channels: React.FC = () =>
 {
-  return (
-    <div>
+  const [channelNames, setChannelNames] = useState<string[] | null>(null)
 
-    </div>
+  useEffect(()=>
+  {
+    getChannels().then(setChannelNames)
+  }, [])
+
+  return (
+    <ul>
+      {channelNames?.map(name => (
+        <li key={name}>{name}</li>
+      ))}
+    </ul>
   )
 }
+
+export default Channels

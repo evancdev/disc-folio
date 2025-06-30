@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { dragHandler } from '../utils/drag'
 import { ChevronDown } from 'lucide-react'
+import Channels from './channels'
 
 
 const LeftCol: React.FC = () => 
@@ -40,7 +41,7 @@ const LeftCol: React.FC = () =>
 
       {/* Channels */}
       <div>
-        
+        <Channels/>
       </div>
     </div>
   )
