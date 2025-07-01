@@ -1,12 +1,16 @@
 import React from 'react'
-import LeftCol from './leftcol'
+import SideBar from './sidebar/sidebar'
 import ChatBox from './chatbox'
+import LoadChannelContext from '../contexts/channelContext'
+
 const MyServer: React.FC = () => 
 {
   return (
     <div className="flex flex-1 bg-disc2 rounded-tl-xl border-t border-l border-bcolor overflow-hidden">
-      <LeftCol/>
-      <ChatBox/>
+      <LoadChannelContext>
+        <SideBar/>
+        <ChatBox/>
+      </LoadChannelContext>
     </div>
   )
 }

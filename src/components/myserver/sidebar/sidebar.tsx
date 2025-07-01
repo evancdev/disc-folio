@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
-import { dragHandler } from '../utils/leftcol_drag'
+import { dragHandler } from '../../utils/sidebar_drag'
 import { ChevronDown } from 'lucide-react'
 import Channels from './channels'
 
 
-const LeftCol: React.FC = () => {
+const SideBar: React.FC = () => {
   // Initial width = 250px
   const [width, setWidth] = useState(250)
   return (
     <div 
-      className="flex flex-col bg-disc1 h-full px-4 font-bold tracking-wide relative"
+      className="flex flex-col bg-disc1 h-full px-5 font-bold tracking-wide relative"
       style = {{width: `${width}px` }}
     >
       {/* Drag Resizing Handler */}
@@ -35,4 +35,4 @@ const LeftCol: React.FC = () => {
   )
 }
 
-export default LeftCol
+export default SideBar
