@@ -9,7 +9,7 @@ const SideBar: React.FC = () => {
   const [width, setWidth] = useState(250)
   return (
     <div 
-      className="flex flex-col bg-disc1 h-full px-5 font-bold tracking-wide relative"
+      className="flex flex-col bg-disc1 h-full font-bold tracking-wide relative"
       style = {{width: `${width}px` }}
     >
       {/* Drag Resizing Handler */}
@@ -19,8 +19,8 @@ const SideBar: React.FC = () => {
       />
       
       {/* Server Name */}
-      <div className="flex border-bcolor w-full h-12 border-b items-center">
-        <p > Evan's Portfolio </p>
+      <div className="border-b border-bcolor flex h-bar items-center px-sidebar">
+        <p> Evan's Portfolio </p>
 
         {/* Chervon Down */}
         <ChevronDown 

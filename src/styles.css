@@ -6,6 +6,8 @@
   --color-disc2: #1B1B1F;
   --color-bcolor: #2b2d31;
   --color-gtext: #8E9297;
+  --spacing-bar: 3rem;
+  --spacing-sidebar:20px;
 }
 
 html, body {
