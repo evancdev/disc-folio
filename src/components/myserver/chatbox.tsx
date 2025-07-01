@@ -1,9 +1,11 @@
 import React from 'react'
 
-const ChatBox: React.FC = () =>
+const ChatBox: React.FC = ({currChannel}) =>
 {
   return (
-    <div></div>
+    <div className="flex flex-col flex-1">
+      <p>Current Channel: {currChannel}</p>
+    </div>
   )
 }
 

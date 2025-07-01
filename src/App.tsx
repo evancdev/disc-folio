@@ -5,7 +5,7 @@ import MyServer from './components/myserver/myserver'
 
 function App() {
   return (
-    <div className = "h-screen bg-disc1 flex flex-col">
+    <div className = "flex flex-col bg-disc1 h-screen">
       <TopBar/>
       <div className="flex flex-row flex-1">
         <ServerList/>
