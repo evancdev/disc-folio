@@ -14,7 +14,7 @@ type ChannelContextType = {
 export const ChannelContext = createContext<ChannelContextType| null>(null)
 
 const LoadChannelIDContext: React.FC<{children: React.ReactNode}> = ({children}) => {
-    const [currChannel, setCurrChannel] = useState('1')
+    const [currChannel, setCurrChannel] = useState<Channel>({id: 1,name: 'welcome'})
     return (
          <ChannelContext.Provider 
             value={{currChannel, setCurrChannel}}>
