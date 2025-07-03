@@ -32,6 +32,6 @@ export async function getChannels(): Promise<string[] | null> {
 }
 
 
-export async function getContent(){
+export async function getContent(channel: string){
   return
 }

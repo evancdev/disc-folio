@@ -8,6 +8,7 @@
   --color-gtext: #8E9297;
   --spacing-bar: 47px;
   --spacing-sidebar:20px;
+  --text-welcome: 30px;
 }
 
 @layer components {
