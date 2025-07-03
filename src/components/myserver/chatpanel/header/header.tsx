@@ -1,7 +1,7 @@
 import React from 'react'
 import { Hash } from 'lucide-react'
-import Member from '../../icons/member'
-import Pin from '../../icons/pin'
+import Member from '../../../icons/member'
+import Pin from '../../../icons/pin'
 import SearchBar from './searchbar'
 
 
