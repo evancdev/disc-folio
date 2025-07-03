@@ -30,3 +30,8 @@ export async function getChannels(): Promise<string[] | null> {
 
   return channels.map(channel => channel.name)
 }
+
+
+export async function getContent(){
+  return
+}

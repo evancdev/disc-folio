@@ -7,7 +7,7 @@ const ChatPanel: React.FC = () => {
   const {currChannel} = useContext(ChannelContext)!
   return (
     <div className="flex flex-col flex-1">
-      <HeaderBar/>
+      <HeaderBar currChannel = {currChannel}/>
       <MessageArea currChannel={currChannel} />
     </div>
   )
