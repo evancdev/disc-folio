@@ -4,16 +4,8 @@ import { Hash } from 'lucide-react'
 import Welcome from './welcome'
 
 const MessageArea: React.FC<{ currChannel: string }> = ({currChannel}) => {
-  const [contents, setContents] = useState<any[] | null>(null)
-  const bottomRef = useRef<HTMLDivElement | null>(null)
-
-  useEffect(() => {
-    getContent(currChannel).then(setContents)
-  }, [currChannel])
-
-
   return (
-    <div className="flex flex-col h-61 border-b border-bcolor px-3">
+    <div className="flex flex-col px-4">
       <Welcome channelName = {currChannel.name}/>
     </div>
   )

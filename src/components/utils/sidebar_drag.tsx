@@ -11,7 +11,7 @@ import React from 'react'
 function getNewWidth(initX: number, initWidth: number, currX: number){
   const delta = currX - initX
   const newWidth = initWidth + delta
-  return Math.max(190, Math.min(newWidth, 360))
+  return Math.max(192, Math.min(newWidth, 360))
 }
 
 /**

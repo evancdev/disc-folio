@@ -26,7 +26,7 @@ const Channels: React.FC = () => {
             className={`flex items-center space-x-2 cursor-pointer ${currChannel.id=== channel.id ? 'text-white' : ''}`}
           >
             <Hash className="w-5 h-5"/> 
-            <span className="truncate max-w-[160px] block">{channel.name}</span>
+            <span className="truncate max-w-[100px] block">{channel.name}</span>
           </li>
         ))}
       </ul>

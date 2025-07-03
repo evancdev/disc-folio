@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
 
+                
 @theme {
   --color-test: white;
   --color-disc1: #101012;
-  --color-disc2: #1B1B1F;
+  --color-disc2: #1a1a1e;
   --color-bcolor: #2b2d31;
   --color-gtext: #8E9297;
   --spacing-bar: 47px;
@@ -13,7 +15,7 @@
 
 @layer components {
   .icon {
-    @apply w-5.5 h-5.5;
+    @apply w-5 h-5;
     fill: var(--color-gtext);
   }
 }
@@ -23,7 +25,7 @@ html, body {
 }
 
 body {
-  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'gg sans', 'Noto Sans', sans-serif;
   color: white;
   font-size: 14px;
 }
