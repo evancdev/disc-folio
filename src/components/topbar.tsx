@@ -8,7 +8,7 @@ const TopBar: React.FC = () =>
     <div className="flex h-8 items-center relative">
 
       {/* Title*/}
-      <p className="absolute text-[13px] font-[400] left-1/2 -translate-x-1/2 tracking-wider">
+      <p className="absolute text-[12px] font-[400] left-1/2 -translate-x-1/2 tracking-wider">
         Evan's Portfolio
       </p>
 
