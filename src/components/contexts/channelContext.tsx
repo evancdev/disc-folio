@@ -1,14 +1,20 @@
 import React, { createContext, useState } from 'react'
 
+
+type Channel = {
+  id: number
+  name: string
+}
+
 type ChannelContextType = {
-  currChannel: string
-  setCurrChannel: (channel: string) => void
+  currChannel: Channel
+  setCurrChannel: (channel: Channel) => void
 }
 
 export const ChannelContext = createContext<ChannelContextType| null>(null)
 
-const LoadChannelContext: React.FC<{children: React.ReactNode}> = ({children}) => {
-    const [currChannel, setCurrChannel] = useState('welcome')
+const LoadChannelIDContext: React.FC<{children: React.ReactNode}> = ({children}) => {
+    const [currChannel, setCurrChannel] = useState('1')
     return (
          <ChannelContext.Provider 
             value={{currChannel, setCurrChannel}}>
@@ -16,4 +22,4 @@ const LoadChannelContext: React.FC<{children: React.ReactNode}> = ({children}) =
          </ChannelContext.Provider>
     )
 }
-export default LoadChannelContext
+export default LoadChannelIDContext
