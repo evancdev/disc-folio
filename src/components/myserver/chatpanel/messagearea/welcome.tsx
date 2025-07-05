@@ -8,7 +8,7 @@ const Welcome: React.FC = ({channelName}) => {
         <div className="flex bg-[#3c3c43] w-[64px] h-[64px] rounded-full items-center justify-center">
         <Hash size={44}></Hash>
         </div>
-        <p className = "text-welcome font-bold">Welcome to #{channelName}!</p>
+        <p className = "text-welcome font-ggsansbold font-bold">Welcome to #{channelName}!</p>
         <p> This is the start of the #{channelName} channel. </p>
       </div>
     </div>

@@ -4,18 +4,20 @@
                 
 @theme {
   --color-test: white;
-  --color-disc1: #101012;
+  --color-disc1: #121214;
   --color-disc2: #1a1a1e;
-  --color-bcolor: #2b2d31;
+  --color-bcolor: #29292c;
   --color-gtext: #8E9297;
   --spacing-bar: 47px;
   --spacing-sidebar:20px;
   --text-welcome: 30px;
+  --font-ggsansbold: 'gg sans';
+  --font-ggsanssemi: 'gg sans SemiBold';
 }
 
 @layer components {
   .icon {
-    @apply w-5 h-5;
+    @apply w-5.5 h-5.5;
     fill: var(--color-gtext);
   }
 }
@@ -25,7 +27,7 @@ html, body {
 }
 
 body {
-  font-family: 'gg sans', 'Noto Sans', sans-serif;
+  font-family: 'gg sans Normal', 'Noto Sans', sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
 }

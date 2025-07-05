@@ -17,16 +17,18 @@ const Channels: React.FC = () => {
   }, [])
 
   return (
-    <div className="pt-5 px-sidebar">
+    <div className="pt-5 px-sidebar overflow-hidden">
       <ul className="text-gtext space-y-2">
         {channels?.map(channel => (
           <li 
             key={channel.id}
             onClick={() => setCurrChannel(channel)} 
-            className={`flex items-center space-x-2 cursor-pointer ${currChannel.id=== channel.id ? 'text-white' : ''}`}
+            className={`flex items-center gap-2 cursor-pointer ${currChannel.id=== channel.id ? 'text-white' : ''}`}
           >
-            <Hash className="w-5 h-5"/> 
-            <span className="truncate max-w-[100px] block">{channel.name}</span>
+            <Hash className="w-5 h-5 flex-shrink-0"/> 
+            <span className="block flex-1 min-w-0 truncate font-ggsanssemi">
+              {channel.name}
+            </span>
           </li>
         ))}
       </ul>

@@ -6,7 +6,7 @@ import React from 'react'
  * @param initX - Initial X position of mouse
  * @param initWidth - Initial width of the component
  * @param currX - Current X position of mouse during drag
- * @returns A number between 190 and 360
+ * @returns A number between 192 and 360
  */
 function getNewWidth(initX: number, initWidth: number, currX: number){
   const delta = currX - initX
