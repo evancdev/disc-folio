@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {getContent} from "../../../data/supabase"
-import { Hash } from 'lucide-react'
 import Welcome from './welcome'
+import UserMsg from'./usermsg'
 
-const MessageArea: React.FC<{ currChannel: string }> = ({currChannel}) => {
+
+const MessageArea: React.FC = ({currChannel}) => {
   return (
     <div className="flex flex-col px-4">
-      <Welcome channelName = {currChannel.name}/>
-      
+      <Welcome currChannel = {currChannel}/>
+      <UserMsg currChannel = {currChannel}></UserMsg>
     </div>
   )
 }

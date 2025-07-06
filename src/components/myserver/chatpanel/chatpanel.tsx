@@ -8,7 +8,7 @@ const ChatPanel: React.FC = () => {
   return (
     <div className="flex flex-col flex-1">
       <HeaderBar currChannel = {currChannel.name}/>
-      <MessageArea currChannel={currChannel} />
+      <MessageArea currChannel={currChannel}/>
     </div>
   )
 }
