@@ -4,13 +4,13 @@ import { Hash } from 'lucide-react'
 const Welcome: React.FC = ({currChannel}) => {
   const isFirstChannel = currChannel.id === 1
   return (
-    <div className = "h-61 border-b border-bcolor">
-      <div className = {`flex flex-col mt-8 gap-y-2 ${isFirstChannel ? 'items-center text-center' : ''}`}>
+    <div className = {`border-b border-bcolor ${isFirstChannel ? 'h-41 flex items-center justify-center' : 'h-61'}`}>
+      <div className = {`flex flex-col gap-y-2 ${isFirstChannel ? 'items-center text-center' : 'mt-8'}`}>
 
         {isFirstChannel ? (
           <>
             <p className="text-welcome font-ggsanssemi">Welcome to <br/>Evan's Portfolio</p>
-            <p className="text-gtext">This is the beginning of this server.</p>
+            <p>This is the beginning of this server.</p>
           </>
         ) : (
           <>
